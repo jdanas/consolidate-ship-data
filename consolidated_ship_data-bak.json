@@ -688,8 +688,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "90.86"
+        ]
     },
     {
         "time_range": "10:00 - 11:00",
@@ -1391,8 +1390,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "11:00 - 12:00",
@@ -2094,8 +2092,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "12:00 - 13:00",
@@ -2797,8 +2794,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "13:00 - 14:00",
@@ -3500,8 +3496,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "14:00 - 15:00",
@@ -4203,8 +4198,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "15:00 - 16:00",
@@ -4906,8 +4900,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "16:00 - 17:00",
@@ -5609,8 +5602,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "17:00 - 18:00",
@@ -6312,8 +6304,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "18:00 - 19:00",
@@ -7015,8 +7006,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "19:00 - 20:00",
@@ -7718,8 +7708,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "1:00 - 2:00",
@@ -8421,8 +8410,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "75.945"
+        ]
     },
     {
         "time_range": "20:00 - 21:00",
@@ -9124,8 +9112,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "21:00 - 22:00",
@@ -9827,8 +9814,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "22:00 - 23:00",
@@ -10530,8 +10516,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "23:00 - 24:00",
@@ -11211,8 +11196,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "2:00 - 3:00",
@@ -11914,8 +11898,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "88.395"
+        ]
     },
     {
         "time_range": "3:00 - 4:00",
@@ -12617,8 +12600,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "90.39"
+        ]
     },
     {
         "time_range": "4:00 - 5:00",
@@ -13320,8 +13302,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "90.39"
+        ]
     },
     {
         "time_range": "5:00 - 6:00",
@@ -14023,8 +14004,7 @@
                 "NAVSTAT": "Under way",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "90.39"
+        ]
     },
     {
         "time_range": "6:00 - 7:00",
@@ -14726,8 +14706,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "90.39"
+        ]
     },
     {
         "time_range": "7:00 - 8:00",
@@ -15429,8 +15408,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "8:00 - 9:00",
@@ -16132,8 +16110,7 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     },
     {
         "time_range": "9:00 - 10:00",
@@ -16835,7 +16812,6 @@
                 "NAVSTAT": "Moored",
                 "DRAUGHT": 14
             }
-        ],
-        "final_score": "91.68"
+        ]
     }
 ]

@@ -49,6 +49,29 @@ def create_consolidated_json():
         print("📊 Sample factor data:")
         print(factors_long_df.head())
 
+        # Extract final score for each time bucket, normalize time_range keys
+        def normalize_time_range(s):
+            return str(s).replace('\u2013', '-').replace('\u2014', '-').replace('–', '-').replace('—', '-').replace(' ', '').strip()
+
+        # Instead of using the melted DataFrame, we need to extract final scores directly from the original DataFrame
+        # Find the row with "Final Score" in the original dataframe
+        final_score_row = factors_df[factors_df['Factor Category'].str.strip().str.lower() == 'final score']
+        
+        if not final_score_row.empty:
+            # Create a map of time ranges to final scores
+            final_score_map = {}
+            for col in time_vars:
+                if col in final_score_row.columns:
+                    score = final_score_row[col].iloc[0]
+                    if pd.notna(score):
+                        final_score_map[normalize_time_range(col)] = score
+        else:
+            print("⚠️ 'Final Score' row not found in the CSV")
+            final_score_map = {}
+            
+        print('🟦 Final score map keys:', list(final_score_map.keys()))
+        print('🟦 Final score map values:', list(final_score_map.values())[:5], "..." if len(final_score_map) > 5 else "")
+
 
         # --- Step 2: Load and Prepare AIS Data ---
         try:
@@ -78,7 +101,6 @@ def create_consolidated_json():
 
         for time_range in unique_time_ranges:
             print(f"🕐 Processing time range: {time_range}")
-            
             try:
                 # Extract hour from time range (e.g., "0:00 - 1:00" -> 0)
                 start_hour = int(time_range.split(':')[0])
@@ -86,13 +108,17 @@ def create_consolidated_json():
                 print(f"⚠️ Skipping invalid time range: {time_range}")
                 continue
 
+            norm_time_range = normalize_time_range(time_range)
+            print(f"   Normalized time_range: {norm_time_range} | Final score: {final_score_map.get(norm_time_range, None)}")
+
             hourly_record = {
                 "time_range": time_range,
                 "external_environment_factors": {},
                 "human_factors": {},
                 "internal_environment_factors": {},
                 "ship_factors": {},
-                "ais_data": []
+                "ais_data": [],
+                "final_score": final_score_map.get(norm_time_range, None)
             }
 
             # Filter AIS data for the current hour
