@@ -91,7 +91,16 @@ def create_consolidated_json():
 
 
         # --- Step 3: Combine Data and Structure JSON ---
-        unique_time_ranges = sorted(factors_long_df['time_range'].unique())
+        unique_time_ranges = factors_long_df['time_range'].unique()
+        
+        # Sort time ranges chronologically by extracting the start hour
+        def extract_start_hour(time_range):
+            try:
+                return int(time_range.split(':')[0])
+            except (ValueError, IndexError):
+                return 999  # Put invalid ranges at the end
+        
+        unique_time_ranges = sorted(unique_time_ranges, key=extract_start_hour)
         print(f"📊 Processing {len(unique_time_ranges)} time ranges: {unique_time_ranges}")
         
         final_json_data = []
